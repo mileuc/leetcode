@@ -14,8 +14,6 @@ class Solution:
                         solution_array.append(first_number_index)
                         solution_array.append(second_number_index)
                         return solution_array
-        print("No solution found.")                  
-        return []
                           
 two_sum_finder = Solution()
 output = two_sum_finder.twoSum([2, 7, 11, 15], 9)
