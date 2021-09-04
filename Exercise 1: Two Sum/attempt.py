@@ -1,10 +1,10 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:    # has to return a list of integers
         solution_indices = []
-        # iterate through each number in the list and add it to each number after it (starting with the last number in the list)
+        # iterate through each number in the list and add it to each number that comes after it (starting with the last number in the list)
         for first_number_index in range(len(nums) - 1):
-            second_number_index = len(nums) - 1     # reset second number to the last index each time
-            while second_number_index > first_number_index:
+            second_number_index = len(nums) - 1     # reset second index to equal the last index each time
+            while second_number_index > first_number_index:     # while the second index is greater than the first, add their values and if it equals the target
                 sum_value = nums[first_number_index] + nums[second_number_index]
                 if sum_value == target:
                     solution_indices.append(first_number_index)
