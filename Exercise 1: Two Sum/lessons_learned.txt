@@ -1,0 +1,1 @@
+Possible solutions going forward: Use a dictionary or the enumerate method to have easier access to the index and value next time.
