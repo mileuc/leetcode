@@ -1,4 +1,8 @@
 class Solution:
+    """
+    self represents the instance of the class, and Self is always pointing to Current Object.
+    by using the “self”  we can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
+    """
     def twoSum(self, nums: List[int], target: int) -> List[int]:    # has to return a list of integers
         solution_indices = []
         # iterate through each number in the list and add it to each number that comes after it (starting with the last number in the list)
